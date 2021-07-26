@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
+    <title>14-day Free Trial | Paramount+</title>
+</head>
+
+
+
+<body class="blue-gradient-background-alternative">
+    <!-- Gradient Blue Start -->
+    <div class="blue-gradient-background">
+        <section class="section-header">
+            <ul class="ul-header-logos">
+                <a href="https://www.paramountplus.com/intl/" target="_blank"><li></li></a>
+                <a href="https://www.a-league.com.au/" target="_blank"><li></li></a>
+                <a href="https://www.w-league.com.au/" target="_blank"><li></li></a>
+            </ul>
+
+            <h1>Enjoy a mountain of football exclusively on paramount+</h1>
+            <div class="soccerballs-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/soccerballs-shadow.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/soccerballs.png">
+            </div>
+        </section>
+
+        <section class="section-intro">
+            <h2>As a fan, you’ve scored an exclusive 14-day free trial.</h2>
+            <p>Register your details below to claim an extended 14-day trial of Paramount+.<br>
+                Take it for a run when it launches on Wednesday August 11.</p>
+        </section>
+
+        <section class="section-form">
+            <form class="email-form" id="email-subscribe">
+
+                <div class="form-group">
+                    <input type="text" class="form-entry" id="first-name" placeholder="First name*"/>
+                    <div class="invalid-feedback no-display"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-entry" id="last-name" placeholder="Last name*"/>
+                    <div class="invalid-feedback no-display"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-entry" id="email" placeholder="Email*" />
+                    <div class="invalid-feedback no-display"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-entry" id="mobile" placeholder="Mobile (optional)" />
+                    <div class="invalid-feedback no-display"></div>
+                </div>
+
+                <div class="checkbox-group">
+
+                    <!-- <input type="checkbox" id="TermsConditions-checkbox" name="TermsConditions-name" value="ReadTermsConditions" /> -->
+
+                    <label for="TermsConditions-checkbox">
+                    For more information about how we use your information, see our <a href="https://www.a-league.com.au/sites/aleague/files/2020-10/A%20League%20Membership%20survey%20Terms%20and%20Conditions%20%282%29.pdf" target="_blank">privacy policy</a>.
+                    </label>
+
+                </div>
+
+                <br>
+
+                <input type="submit" id="submit-email-button" value="Sign Up" class="button half-button" />
+                <div class="invalid-feedback-submit no-display" id="submit-feedback"></div>
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section class="section-form no-display">
+            <form class="email-form" id="email-trial-form">
+
+                <p>If you’ve already registered but lost your free trial code, please enter your email below and we’ll resent it:</p>                     
+
+
+                <div class="form-group form-third">
+                    <input type="text" class="form-entry" id="email-trial" placeholder="Email*" />
+                    <div class="invalid-feedback no-display" id="trial-email-feedback"></div>
+                </div>
+
+                <div class="form-group form-single">
+                    <input type="submit" value="Submit" id='email-trial-submit' class="button" />
+                    <div class="invalid-feedback no-display" id="trial-feedback"></div>
+                </div>
+                
+            </form>
+
+        <hr>
+
+        </section>
+
+
+        <section class="section-players">
+            <h3>With Paramount+ you’ll enjoy exclusive access to every single <nobr>A-LEAGUE</nobr>, <nobr>W-LEAGUE</nobr>, and <nobr>socceroos</nobr> match from the start of the 2021/22 season.</h3>
+            <p>Plus, you can catch the best of Aussie football including Socceroos, Matildas and
+                FFA Cup matches. A mountain of football content streamed straight to your home.</p>
+            <p>Register now and on August 11th when Paramount+ launches, we’ll send you a code to redeem your offer.</p>
+            <div class="soccerplayers-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/soccer-players.png">
+            </div>
+        </section>
+    </div>
+    <!-- Gradient Blue End -->
+
+    <section class="section-members white-background">
+        <h3 class="blue">Club members also score exclusive club offer</h3>
+        <ul class="ul-member-logos">
+            <li><a href="https://adelaideunited.memberlink.net.au/memberhome" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://roar.memberlink.net.au/memberhome#home" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://www.canberraunited.com.au/membership" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://ccmariners.memberlink.net.au/memberhome" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://membership.macarthurfc.com.au/" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://www.citymembership.com.au/" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://gomvfc.com.au/" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://am.ticketmaster.com/newcastlejets/#/" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://premier.sportsubs.com.au/aleague/perthglory/products?productcategoryid=1&_ga=2.211626259.728133864.1566871873-624003209.1566871873" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://my.sydneyfc.com/home" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://www.wellingtonphoenix.com/contact-us" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://www.wanderland.com.au/" target="_blank">MEMBER INFO</a></li>
+            <li><a href="https://wufc.memberlink.net.au/memberhome" target="_blank">MEMBER INFO</a></li>
+        </ul>
+    </section>
+
+    <div class="blue-gradient-radial">
+
+        <section class="section-faq">
+            <h3>FAQ’S</h3>
+            <details>
+                <summary>When will my subscription start?</summary>
+                <div class="faq-content">
+                    <p>Once you have redeemed your code and created your Paramount + account, your subscription will be activated. Codes will be sent when Paramount+ launches on Wednesday August 11th.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>What content is available on Paramount+?</summary>
+                <div class="faq-content">
+                    <p>It’s the only place to catch every match of every round of the A-League and W-League… whenever you want, wherever you want. From the start of the 2021/22 Seasons, enjoy the best of Australian football all in one place, including the Socceroos, Matildas, FFA Cup matches. When Paramount+ launches on August 11th you can access some of the world’s biggest brands including Showtime, Paramount + Originals, MTV, Nickelodeon, Comedy Central, Smithsonian Channel, CBS and more.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>How many devices can I watch Paramount+ on at the same time?</summary>
+                <div class="faq-content">
+                    <p>There are 3 concurrent HD streams included in the monthly and annual subscription.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Do I have to pay any money now?</summary>
+                <div class="faq-content">
+                    <p>No, as a football fan you are entitled to a 14-day free trial. Once the 14 days are up you will be charged monthly or annually.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>What if I have questions that are not listed here?</summary>
+                <div class="faq-content">
+                    <p>Please contact <a href="mailto:help@aplfootball.com.au?subject=A question from the site">help@aplfootball.com.au</a></p>
+                </div>
+            </details>
+
+            <details>
+                <summary>I submitted my subscription, but I didn’t receive a redemption code.</summary>
+                <div class="faq-content">
+                    <p>Codes will be sent after Paramount+ has launches on Wednesday August 11th. If you have not received your code after this date please check your junk mail. If you still have not received it, please click here to resend it.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Where can I find the Privacy Policy for this offer?</summary>
+                <div class="faq-content">
+                    <p>You can find the <a href="ttps://www.a-league.com.au/sites/aleague/files/2020-10/A%20League%20Membership%20survey%20Terms%20and%20Conditions%20%282%29.pdf" target="_blank">Privacy Policy here.</a></p>
+                </div>
+            </details>
+          
+        </section>
+
+        <section class="section-email-a-question">
+            <h3>Don’t see what you need?</h3>
+            <a href="mailto:help@aplfootball.com.au?subject=A question from the site">Email a question</a>
+        </section>
+
+    </div>
+        <section class="section-footer light-blue-background">
+            <ul class="ul-footer-logos">
+                <a href="https://www.paramountplus.com/intl/" target="_blank"><li></li></a>
+                <li></li>
+                <a href="https://www.a-league.com.au/" target="_blank"><li></li></a>
+                <a href="https://www.w-league.com.au/" target="_blank"><li></li></a>
+            </ul>
+        </section>
+    
+</body>
+
+    <!-- GA Tracking -->
+    <script async src=https://www.googletagmanager.com/gtag/js?id=UA-820669-3></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-820669-3');
+    </script>
+<script src="<?php echo get_template_directory_uri(); ?>/script.js"></script>
+
+</html>
