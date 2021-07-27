@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
@@ -63,7 +63,7 @@
                     <!-- <input type="checkbox" id="TermsConditions-checkbox" name="TermsConditions-name" value="ReadTermsConditions" /> -->
 
                     <label for="TermsConditions-checkbox">
-                    For more information about how we use your information, see our <a href="https://www.a-league.com.au/sites/aleague/files/2020-10/A%20League%20Membership%20survey%20Terms%20and%20Conditions%20%282%29.pdf" target="_blank">privacy policy</a>.
+                    For more information about how we use your information, see our <a href="https://www.a-league.com.au/sites/aleague/files/2020-10/A%20League%20Membership%20survey%20Terms%20and%20Conditions%20%282%29.pdf" target="_blank">Privacy Policy</a>.
                     </label>
 
                 </div>
@@ -139,14 +139,14 @@
             <details>
                 <summary>When will my subscription start?</summary>
                 <div class="faq-content">
-                    <p>Once you have redeemed your code and created your Paramount + account, your subscription will be activated. Codes will be sent when Paramount+ launches on Wednesday August 11th.</p>
+                    <p>Once you have redeemed your code and created your Paramount+ account, your subscription will be activated. Codes will be sent when Paramount+ launches on Wednesday August 11th.</p>
                 </div>
             </details>
 
             <details>
                 <summary>What content is available on Paramount+?</summary>
                 <div class="faq-content">
-                    <p>It’s the only place to catch every match of every round of the A-League and W-League… whenever you want, wherever you want. From the start of the 2021/22 Seasons, enjoy the best of Australian football all in one place, including the Socceroos, Matildas, FFA Cup matches. When Paramount+ launches on August 11th you can access some of the world’s biggest brands including Showtime, Paramount + Originals, MTV, Nickelodeon, Comedy Central, Smithsonian Channel, CBS and more.</p>
+                    <p>It’s the only place to catch every match of every round of the A-League and W-League… whenever you want, wherever you want. From the start of the 2021/22 Seasons, enjoy the best of Australian football all in one place, including the Socceroos, Matildas, FFA Cup matches. When Paramount+ launches on August 11th you can access some of the world’s biggest brands including Showtime, Paramount+ Originals, MTV, Nickelodeon, Comedy Central, Smithsonian Channel, CBS and more.</p>
                 </div>
             </details>
 
@@ -174,7 +174,7 @@
             <details>
                 <summary>I submitted my subscription, but I didn’t receive a redemption code.</summary>
                 <div class="faq-content">
-                    <p>Codes will be sent after Paramount+ has launches on Wednesday August 11th. If you have not received your code after this date please check your junk mail. If you still have not received it, please click here to resend it.</p>
+                    <p>Codes will be sent after Paramount+ has launched on Wednesday August 11th. If you have not received your code after this date please check your junk mail.</p>
                 </div>
             </details>
 
@@ -196,7 +196,7 @@
         <section class="section-footer light-blue-background">
             <ul class="ul-footer-logos">
                 <a href="https://www.paramountplus.com/intl/" target="_blank"><li></li></a>
-                <li></li>
+                <a href="https://www.paramountplus.com/intl/" target="_blank"><li></li></a>
                 <a href="https://www.a-league.com.au/" target="_blank"><li></li></a>
                 <a href="https://www.w-league.com.au/" target="_blank"><li></li></a>
             </ul>

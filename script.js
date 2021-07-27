@@ -31,11 +31,6 @@ const trailsubmitFeedback = document.getElementById('trial-feedback');
 const submitEmailButton = document.getElementById('submit-email-button');
 const emailTrialButton = document.getElementById('email-trial-submit');
 
-//Create Trial Dummy JSON
-var data2 = {
-    email: 'test@email.com'
-}
-
 //Set up event methods
 //Button 1 (Sign Up Email) Enabled 
 submitEmailButton.addEventListener('click', signupEmailButton)
@@ -234,7 +229,7 @@ function submitNewEmailSuccess(data){
     // console.log(data.status);
     if (data.status == 201){
 emailsubmitFeedback.classList.remove('no-display');
-emailsubmitFeedback.innerHTML = "Thank you. Your registration has been successful!<br>For more about how we use your information, see our <a href='https://www.a-league.com.au/sites/aleague/files/2020-10/A%20League%20Membership%20survey%20Terms%20and%20Conditions%20%282%29.pdf' target='blank'>Privacy Policy</a>.<br><br>Your 14-day free trial redemption code will be sent to your inbox when Paramount+ launches on Wednesday, August 11th. Make sure to check your Junk mail if you don’t receive."
+emailsubmitFeedback.innerHTML = "Thank you. Your registration has been successful!<br>For more about how we use your information, see our <a href='https://www.a-league.com.au/sites/aleague/files/2020-10/A%20League%20Membership%20survey%20Terms%20and%20Conditions%20%282%29.pdf' target='blank'>Privacy Policy</a>.<br><br>Your 14-day free trial redemption code will be sent to your inbox when Paramount+ launches on Wednesday, August 11th. Make sure to check your Junk mail if you don’t receive it."
 submitEmailButton.classList.remove("disable-button");
     } else if (data.status == 409){
         emailsubmitFeedback.classList.remove('no-display');

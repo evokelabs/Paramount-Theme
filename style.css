@@ -530,7 +530,7 @@ animation: sweep .25s ease;
   background-repeat: no-repeat;
 }
 
-.section-footer .ul-footer-logos li:nth-child(2) {
+.section-footer .ul-footer-logos a:nth-child(2) li {
   background-image: url('./img/header-logo-4.svg');
   background-repeat: no-repeat;
   width: 130px;
