@@ -102,7 +102,7 @@
 
 
         <section class="section-players">
-            <h3>With Paramount+ you’ll enjoy exclusive access to every single <nobr>A-LEAGUE</nobr>, <nobr>W-LEAGUE</nobr>, and <nobr>socceroos</nobr> match from the start of the 2021/22 season.</h3>
+            <h3>With Paramount+ you’ll enjoy exclusive access to every single <nobr>A-LEAGUE</nobr> and <nobr>W-LEAGUE</nobr> match from the start of the 2021/22 season.</h3>
             <p>Plus, you can catch the best of Aussie football including Socceroos, Matildas and
                 FFA Cup matches. A mountain of football content streamed straight to your home.</p>
             <p>Register now and on August 11th when Paramount+ launches, we’ll send you a code to redeem your offer.</p>
@@ -114,7 +114,7 @@
     <!-- Gradient Blue End -->
 
     <section class="section-members white-background">
-        <h3 class="blue">Club members also score exclusive club offer</h3>
+        <h3 class="blue">Club members also score an exclusive club offer</h3>
         <ul class="ul-member-logos">
             <li><a href="https://adelaideunited.memberlink.net.au/memberhome" target="_blank">MEMBER INFO</a></li>
             <li><a href="https://roar.memberlink.net.au/memberhome#home" target="_blank">MEMBER INFO</a></li>
@@ -201,7 +201,7 @@
                 <a href="https://www.w-league.com.au/" target="_blank"><li></li></a>
             </ul>
         </section>
-    
+    <?php wp_footer(); ?>
 </body>
 
     <!-- GA Tracking -->

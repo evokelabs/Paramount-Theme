@@ -21,6 +21,7 @@ const lastNameFeedback = document.getElementById('last-name').parentElement.chil
 const emailFeedback = document.getElementById('email').parentElement.childNodes[3];
 const mobileFeedback = document.getElementById('email-trial').parentElement.childNodes[3];
 const emailTrialFeedback = document.getElementById('email-trial').parentElement.childNodes[3];
+const phoneFeedback = document.getElementById('mobile').parentElement.childNodes[3];
 
 //Assign Buttons - Feedback Areas (Buttons)
 const emailsubmitFeedback = document.getElementById('submit-feedback');
@@ -87,13 +88,18 @@ function validateSignUpEmail() {
         flag = 1;
     }
 
-    if (lastNameString == "") {
+    if (validateLastName()) {
         failErrorMessage(lastNameFeedback, "Please enter your last name")
         flag = 1;
     }
 
-    if (firstNameString == "") {
+    if (validateFirstName()) {
         failErrorMessage(firstNameFeedback, "Please enter your first name")
+        flag = 1;
+    }
+
+    if (validatePhone()) {
+        failErrorMessage(phoneFeedback, "Please enter a valid mobile number")
         flag = 1;
     }
 
@@ -289,44 +295,48 @@ document.getElementById('first-name').addEventListener('blur', validateFirstName
 document.getElementById('last-name').addEventListener('blur', validateLastName);
 document.getElementById('email').addEventListener('blur', validateEmail);
 document.getElementById('email-trial').addEventListener('blur', validateEmailTrial);
+document.getElementById('mobile').addEventListener('blur', validatePhone);
 
 // Phone Not Needed
 // document.getElementById('mobile').addEventListener('blur', validatePhone);
 
 function validateFirstName() {
-
     const name = document.getElementById('first-name');
-    const re = /^[A-Za-z]{2,10}$/;
+    const re = /^[A-Za-z\-\']{2,}$/;
 
     if (!re.test(name.value)) {
         firstNameFeedback.classList.remove('no-display');
+        return(true);     
     } else {
         firstNameFeedback.classList.add('no-display');
         firstName.classList.remove('invalid');
-        if (emailsubmitFeedback.innerHTML=="Please enter your first name"){
-            emailsubmitFeedback.innerHTML="";
+        if (firstNameFeedback.innerHTML=="Please enter your first name"){
+            firstNameFeedback.innerHTML="";
         };
+        return(false);     
     }
 
 }
 
 function validateLastName() {
     const name = document.getElementById('last-name');
-    const re = /^[A-Za-z]{2,10}$/;
+    const re = /^[A-Za-z\-\']{2,}$/;
 
     if (!re.test(name.value)) {
-        lastNameFeedback.classList.remove('no-display');       
+        lastNameFeedback.classList.remove('no-display');    
+        return(true);   
     } else {
+
         lastNameFeedback.classList.add('no-display');
         lastName.classList.remove('invalid');
-        if (emailsubmitFeedback.innerHTML=="Please enter your last name"){
-            emailsubmitFeedback.innerHTML="";
+        if (lastNameFeedback.innerHTML=="Please enter your last name"){
+            lastNameFeedback.innerHTML="";
         };
+        return(false);     
     }
 }
 
 function validateEmail() {
-
     const email = document.getElementById('email');
     const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
@@ -340,7 +350,7 @@ function validateEmail() {
             emailsubmitFeedback.innerHTML="";
         };
         return(false);       
-        }
+    }
 }
 
 function validateEmailTrial() {
@@ -362,14 +372,19 @@ function validateEmailTrial() {
 }
 
 function validatePhone() {
-
     const name = document.getElementById('mobile');
-    const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d(4)$/;
+    const re = /^[0-9+ ]{10,}$/;
 
-    if (!re.test(mobile.value)) {
-        name.parentElement.childNodes[3].classList.remove('no-display');
+    if ((name.value !== "") && (!re.test(name.value))) {
+        phoneFeedback.classList.remove('no-display');    
+        return(true);   
     } else {
-        name.parentElement.childNodes[3].classList.add('no-displays-active');
-    }
 
+        phoneFeedback.classList.add('no-display');
+        mobile.classList.remove('invalid');
+        if (phoneFeedback.innerHTML=="Please enter a valid mobile number"){
+            phoneFeedback.innerHTML="";
+        };
+        return(false);     
+    }
 }
